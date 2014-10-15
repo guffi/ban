@@ -35,18 +35,20 @@ halló heimur
 	</script>
 
 	<script>
-	var list = function getRandomInt(min, max)
+	function getRandomNumber() {
+		var list = function getRandomInt(min, max)
 		{
 	    	return Math.floor(Math.random() * (max - min + 1)) + min;
 	    	return getRandomInt();
 	    	console.log("party");
 	    	console.log(getRandomInt);
 		}
+	};
 	</script>
 
 	<script type="text/javascript">
 
-function myFunction() {
+function vinir() {
 		var friends = {};
 
 		friends.bill = {
@@ -105,13 +107,13 @@ function myFunction() {
 			</ul>
   	</div>
 
-	<button type="button" class="banButton">haha!</button>
+	<button type="button" class="banButton">ignore</button>
 
-	<button onclick="list" class="banButtonRed">Prufa</button>
+	<button onclick="getRandomNumber()" class="banButtonRed">Random</button>
 
-	<button onclick="myFunction()" class="banButton">What is the time?</button>
+	<button onclick="vinir()" class="banButton">Vinir</button>
 
-	<button type="button" onclick="location.href='http://www.banthai.is'" class="banButtonRed">See available pizzas</button>
+	<button type="button" onclick="location.href='http://www.banthai.is'" class="banButtonRed">Pizza Menu</button>
 
 </div>
 
