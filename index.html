@@ -36,7 +36,7 @@ halló heimur
 
 	<script>
 	function getRandomNumber() {
-		var list = function getRandomInt(5, 10)
+		var getRandomNumber() = function getRandomInt(max, min)
 		{
 	    	return Math.floor(Math.random() * (max - min + 1)) + min;
 	    	console.log("party")
@@ -109,7 +109,7 @@ function vinir() {
 
 	<button type="button" class="banButton">ignore</button>
 
-	<button onclick="getRandomNumber()" class="banButtonRed">Random</button>
+	<button onclick="getRandomNumber(5, 10)" class="banButtonRed">Random</button>
 
 	<button onclick="vinir()" class="banButton">Vinir</button>
 
