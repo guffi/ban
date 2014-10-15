@@ -33,6 +33,13 @@ halló heimur
 	<td><input type="text" name="emp" readonly="readonly" value=""></td>
 	<td><input type="button" value="Generate Employee Id" onclick="randomStringToInput(this)"></td>
 	</script>
+
+	<script type="text/javascript">
+	function getRandomInt(min, max)
+		{
+	    	return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+	</script>
 </head>
 <body>
 
@@ -58,6 +65,7 @@ halló heimur
 
 	<button onclick="getElementById('demo').innerHTML=Date()" class="banButton">What is the time?</button>
 
+	<button onclick="getRandomInt(2, 10)" class="banButtonRed">Prufa</button>
 
 	<button type="button" onclick="location.href='http://www.banthai.is'" class="banButtonRed">See available pizzas</button>
 
