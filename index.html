@@ -15,6 +15,7 @@ halló heimur
 	    var self = $(clicked_element);
 	    var random_string = generateRandomString(10);
 	    $('input[name=emp]').val(random_string);
+	    console.log("er eitthvað að hverfa?")
 	    self.remove();
 	};
 
@@ -94,10 +95,10 @@ function vinir() {
 			</ul>
   	</div>
 
-	<button onclick="generateRandomString(10)" type="button" class="banButton">ignore</button>
+	<button onclick="generateRandomString(10)" type="button" class="banButton">random string</button>
 
-	<button onclick="getRandomNumber(5, 10)" class="banButtonRed">Random</button>
-
+	<button onclick="randomStringToInput(clicked_element)" type="button" class="banButton">skipta út</button>
+	
 	<button onclick="vinir()" class="banButton">Vinir</button>
 
 	<button type="button" onclick="location.href='http://www.banthai.is'" class="banButtonRed">Pizza Menu</button>
