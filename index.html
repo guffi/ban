@@ -1,35 +1,51 @@
+<!DOCTYPE html>
 <html>
 <head>
+halló heimur
+</head>
 <body>
 
-<script>
-function randomStringToInput(clicked_element)
-{
-    var self = $(clicked_element);
-    var random_string = generateRandomString(10);
-    $('input[name=emp]').val(random_string);
-    self.remove();
-}
-function generateRandomString(string_length)
-{
-    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var string = '';
-    for(var i = 0; i <= string_length; i++)
-    {
-        var rand = Math.round(Math.random() * (characters.length - 1));
-        var character = characters.substr(rand, 1);
-        string = string + character;
-    }
-    return string;
-}
-</script>
-<td><input type="text" name="emp" readonly="readonly" value=""></td>
-<td><input type="button" value="Generate Employee Id" onclick="randomStringToInput(this)"></td>
+	<script>
+	function randomStringToInput(clicked_element)
+	{
+	    var self = $(clicked_element);
+	    var random_string = generateRandomString(10);
+	    $('input[name=emp]').val(random_string);
+	    self.remove();
+	}
+	function generateRandomString(string_length)
+	{
+	    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+	    var string = '';
+	    for(var i = 0; i <= string_length; i++)
+	    {
+	        var rand = Math.round(Math.random() * (characters.length - 1));
+	        var character = characters.substr(rand, 1);
+	        string = string + character;
+	    }
+	    return string;
+	}
+	</script>
+	<td><input type="text" name="emp" readonly="readonly" value=""></td>
+	<td><input type="button" value="Generate Employee Id" onclick="randomStringToInput(this)"></td>
 
-guffi.github.io/ban
+	guffi.github.io/ban
+
+	<h1>What pizza should I have?</h1>
+	<p>Click the button and I'll choose a pizza for you! Magic is gonna happen.</p>
+
+	<a href="http://banthai.is"> "Learn More" </a>
+
+	<img src="http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg" width="500" alt="logo">
+
+	<p>Þessi síða mun gera þetta fyrir þig</p>
+	<ul>
+		<li>gera lífið auðveldara</li>
+		<li>borða pizzu</li>
+	</ul>
 
 </body>
-</head>
+
 </html>
 
 
