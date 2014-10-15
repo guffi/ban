@@ -10,6 +10,8 @@
 halló heimur
 
 	<script>
+	function ignore() {
+
 	function randomStringToInput(clicked_element)
 	{
 	    var self = $(clicked_element);
@@ -32,18 +34,8 @@ halló heimur
 
 	<td><input type="text" name="emp" readonly="readonly" value=""></td>
 	<td><input type="button" value="Generate Employee Id" onclick="randomStringToInput(this)"></td>
-	</script>
 
-	<script>
-	function getRandomNumber() {
-		var getRandomNumber() = function getRandomInt(max, min)
-		{
-	    	return Math.floor(Math.random() * (max - min + 1)) + min;
-	    	console.log("party")
-	    	console.log(getRandomInt)
-	    	return getRandomInt()
-		}
-	};
+};
 	</script>
 
 	<script type="text/javascript">
@@ -107,7 +99,7 @@ function vinir() {
 			</ul>
   	</div>
 
-	<button type="button" class="banButton">ignore</button>
+	<button onclick="ignore()" type="button" class="banButton">ignore</button>
 
 	<button onclick="getRandomNumber(5, 10)" class="banButtonRed">Random</button>
 
