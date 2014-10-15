@@ -1,0 +1,9 @@
+.banButton {
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	font-family: "Arial";
+  	color: #99CCFF;
+  	text-align: center;
+	border-top: 1px solid #6DBCDB;
+}
