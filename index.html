@@ -18,7 +18,8 @@ halló heimur
 	    var random_string = generateRandomString(10);
 	    $('input[name=emp]').val(random_string);
 	    self.remove();
-	}
+	};
+
 	function generateRandomString(string_length)
 	{
 	    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -29,8 +30,8 @@ halló heimur
 	        var character = characters.substr(rand, 1);
 	        string = string + character;
 	    }
+	    console.log("party")
 	    return string;
-	    console.log("party");
 	};
 
 };
