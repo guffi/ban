@@ -45,6 +45,8 @@ halló heimur
 	</script>
 
 	<script type="text/javascript">
+
+function myFunction() {
 		var friends = {};
 
 		friends.bill = {
@@ -78,7 +80,7 @@ halló heimur
 
 		list(friends);
 		search("Steve");
-
+}
 	</script>
 
 </head>
@@ -106,7 +108,7 @@ halló heimur
 
 	<button onclick="list" class="banButtonRed">Prufa</button>
 
-	<button onclick="friends" class="banButton">What is the time?</button>
+	<button onclick="myFunction()" class="banButton">What is the time?</button>
 
 	<button type="button" onclick="location.href='http://www.banthai.is'" class="banButtonRed">See available pizzas</button>
 
