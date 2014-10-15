@@ -1,12 +1,18 @@
 #container { 
 	width: 800px; 
-	margin: 0 auto; 
+	margin: 0 auto;
+	float: center;
 }
 
 #container h1
 {
 	color: #6DBCDB;
-	float: right;
+	float: left;
+}
+
+#container p
+{
+	margin: 5px 0px;
 }
 
 .banButton {
