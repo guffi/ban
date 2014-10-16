@@ -99,12 +99,7 @@ function printArray()
 	        return this.age;
 	    };
 
-	document.write(myObj.name);
-	document.write("<br/>");
-	document.write(myObj.age);
-	document.write("<br/>");
-	document.write(myObj.getAge());
-	console.log(myObj);
+	document.getElementById("results").innerHTML = (myObj.name);
 };
 </script>
 
@@ -142,7 +137,9 @@ function printArray()
     <button type="button" onclick="showText()" class="banButtonRed">Show text</button>
 </div>
 
+<div id"results">
 <button type="button" onclick="printArray()" class="banButtonRed">Array</button>
+</div>
 
 </div>
 
