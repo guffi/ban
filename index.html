@@ -87,6 +87,26 @@ function vinir() {
 	};
 </script>
 
+<script>
+function printArray()
+{
+	var myObj = new Object();
+	myObj.name = "Fred";
+	myObj.age = 42;
+
+	myObj.getAge = 
+	    function () {
+	        return this.age;
+	    };
+
+	document.write(myObj.name);
+	document.write("<br/>");
+	document.write(myObj.age);
+	document.write("<br/>");
+	document.write(myObj.getAge());
+};
+</script>
+
 </head>
 <body>
 
@@ -120,6 +140,8 @@ function vinir() {
     <div id="nested"></div>
     <button type="button" onclick="showText()" class="banButtonRed">Show text</button>
 </div>
+
+<button type="button" onclick="printArray()" class="banButtonRed">Array</button>
 
 </div>
 
