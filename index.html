@@ -74,6 +74,17 @@ function vinir() {
 }
 	</script>
 
+<script type="text/javascript">
+   function showText() 
+   {
+	   	var div = document.getElementById("textDiv");
+	    var nestedDiv = document.getElementById("nested");
+	    nestedDiv.textContent = "nested";
+
+	    var text = "[" + div.textContent + "]";
+	};
+</script>
+
 </head>
 <body>
 
@@ -97,11 +108,16 @@ function vinir() {
 
 	<button onclick="generateRandomString(10)" type="button" class="banButton">random string</button>
 
-	<button onclick="randomStringToInput(button)" type="button" class="banButton">skipta út</button>
+	<button onclick="randomStringToInput()" type="button" class="banButton">skipta út</button>
 
 	<button onclick="vinir()" class="banButton">Vinir</button>
 
 	<button type="button" onclick="location.href='http://www.banthai.is'" class="banButtonRed">Pizza Menu</button>
+
+<div id="textDiv">
+    <div id="nested"></div>
+    <button type="button" onclick="showText()" class="banButtonRed">Show text</button>
+</div>
 
 </div>
 
