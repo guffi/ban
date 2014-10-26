@@ -1,0 +1,60 @@
+#container { 
+	width: 800px; 
+	margin: 0 auto;
+	float: center;
+}
+
+#container h1
+{
+	color: #6DBCDB;
+	float: left;
+}
+
+#container p
+{
+	margin: 5px 0px;
+}
+
+#results {
+width: 150px;
+height: 50px;
+font-family: "Arial";
+font-size: 14pt;
+border-radius: 7px;
+color: #666;
+text-align: center;
+}
+
+
+.banButton {
+margin: 10px 0px;
+padding: 0;
+width: 150px;
+height: 50px;
+border: 0;
+font-family: "Arial";
+font-size: 14pt;
+font-weight: bold;
+border-radius: 7px;
+color: #666;
+background: #FFBE1A;
+text-align: center;
+/* border-top: 1px solid #6DBCDB; */
+}
+
+
+.banButtonRed {
+margin: 10px 0px;
+padding: 0;
+width: 150px;
+height: 50px;
+border: 0;
+font-family: "Arial";
+font-size: 14pt;
+font-weight: bold;
+border-radius: 7px;
+color: #666;
+background: #FF5454;
+text-align: center;
+/* border-top: 1px solid #6DBCDB; */
+}
