@@ -4,131 +4,40 @@
 
 <meta charset="utf-8">
 
-<link rel="stylesheet" href="ban.css">
-<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="readings.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<script src="reading.js"></script>
 
 <title>BanPizza</title>
-halló heimur
-
-	<script>
-	function randomStringToInput(clicked_element)
-	{
-	    var self = $(clicked_element);
-	    var random_string = generateRandomString(10);
-	    $('input[name=emp]').val(random_string);
-	    console.log("er eitthvað að hverfa?")
-	    self.remove();
-	};
-
-	function generateRandomString(string_length)
-	{
-	    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-	    var string = '';
-	    for(var i = 0; i <= string_length; i++)
-	    {
-	        var rand = Math.round(Math.random() * (characters.length - 1));
-	        var character = characters.substr(rand, 1);
-	        string = string + character;
-	    }
-	    console.log("party")
-	    return string;
-	};
-	</script>
-
-	<script type="text/javascript">
-
-function vinir() {
-		var friends = {};
-
-		friends.bill = {
-		  firstName: "Bill",
-		  lastName: "Gates",
-		  number: "(206) 555-5555",
-		  address: ['One Microsoft Way','Redmond','WA','98052']
-		};
-
-		friends.steve = {
-		  firstName: "Steve",
-		  lastName: "Jobs",
-		  number: "(408) 555-5555",
-		  address: ['1 Infinite Loop','Cupertino','CA','95014']
-		};
-
-		var list = function(obj) {
-		  for(var prop in obj) {
-		    console.log(prop);
-		  }
-		};
-
-		var search = function(name) {
-		  for(var prop in friends) {
-		    if(friends[prop].firstName === name) {
-		      console.log(friends[prop]);
-		      return friends[prop];
-		    }
-		  }
-		};
-
-		list(friends);
-		search("Steve");
-		console.log("party")
-
-		var text = "(" + friends.textContent + ")";
-}
-	</script>
-
-<script type="text/javascript">
-   function showText() 
-   {
-	   	var div = document.getElementById("textDiv");
-	    var nestedDiv = document.getElementById("nested");
-	    nestedDiv.textContent = "nested";
-
-	    var text = "[" + div.textContent + "]";
-	};
-</script>
-
-<script>
-function printArray()
-{
-	var myObj = new Object();
-	myObj.name = "Fred";
-	myObj.age = 42;
-
-	myObj.getAge = 
-	    function () {
-	        return this.age;
-	    };
-
-	console.log(myObj)
-	
-	document.getElementById("results").innerHTML = (myObj.name);
-	document.getElementById("results").innerHTML += ("<br/>");
-	document.getElementById("results").innerHTML += (myObj.age);
-};
-</script>
 
 </head>
 <body>
 
 
 <div id="container">
-	<div id="top">
-  			<h1>What pizza should I have?</h1>
-  			<br>
-			<p>Click the button and I'll choose a pizza for you! Magic is gonna happen.</p>
+	<div>
+  		<h1>What pizza should I have?</h1>
+  	</div>
 
-			<a href="http://banthai.is"> "Learn More" </a>
-
-			<img src="http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg" width="500" alt="logo">
-
+  	<div>
+		<p>Click the button and I'll choose a pizza for you! Magic is gonna happen.</p>
+	</div>
+	<div>
+		<a href="http://banthai.is"> "Learn More" </a>
+	</div>
+	<div>	
+		<img src="http://richthediabetic.com/wp-content/uploads/2013/07/Pizza.jpg" width="500" alt="logo">
+	</div>
+	<div>
 			<p>Þessi síða mun gera þetta fyrir þig</p>
 			<ul >
 				<li>gera lífið auðveldara</li>
 				<li>borða pizzu</li>
 			</ul>
   	</div>
+</div>
 
+<div id="container">
 	<button onclick="generateRandomString(10)" type="button" class="banButton">random string</button>
 
 	<button onclick="randomStringToInput()" type="button" class="banButton">skipta út</button>
@@ -137,15 +46,16 @@ function printArray()
 
 	<button type="button" onclick="location.href='http://www.banthai.is'" class="banButtonRed">Pizza Menu</button>
 
-<div id="textDiv">
+</div>
+</div>
+
+<div id="container">
     <div id="nested"></div>
     <button type="button" onclick="showText()" class="banButtonRed">Show text</button>
 </div>
 
 <div id="results">
 <button type="button" onclick="printArray()" class="banButtonRed">Array</button>
-</div>
-
 </div>
 
 

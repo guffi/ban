@@ -1,18 +1,53 @@
 #container { 
-	width: 800px; 
-	margin: 0 auto;
+	width: auto; 
+	margin: 15px;
 	float: center;
+	font-family: 'Lato', sans-serif;
+	float: left;
+
 }
 
 #container h1
 {
-	color: #6DBCDB;
-	float: left;
+color: #6DBCDB;
+float: left;
+font-size: 3em;
+font-weight: 900;
+font-style: italic;
 }
 
 #container p
 {
+	float: left;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+#container a
+{
+	float: left;
+}
+
+#container img
+{
+	float: left;
+}
+
+#container ul
+{
+	float: left;
 	margin: 5px 0px;
+}
+
+#container li
+{
+	float: left;
+	margin: 5px 0px;
+}
+
+#top
+{
+	margin: 20px;
 }
 
 #results {
