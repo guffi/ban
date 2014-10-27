@@ -29,7 +29,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
 	width: auto;
 	height: auto;
 	background: #000;
@@ -63,19 +62,27 @@ table {
 
 #container h1
 {
-color: #6DBCDB;
-font-size: 3em;
-font-weight: 900;
-font-style: italic;
-padding: 20px;
+	font-size: 3em;
+	font-weight: 900;
+	font-style: italic;
+	padding: 20px;
+}
+
+#container h2
+{
+	font-size: 1.5em;
+	font-weight: 400;
+	font-style: bold;
+	padding: 2px;
 }
 
 #container p
 {
 	font-size: 1em;
 	font-weight: 300;
+	padding: 0.5em;
 	text-align: center;
-	padding: 1em;
+	word-wrap:break-word;
 }
 
 #container a
