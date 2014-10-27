@@ -16,15 +16,19 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <link rel="stylesheet" href="read.css">
+<link rel="stylesheet" href="pull-to-refresh.css"
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
 <script src="read.js"></script>
+<script src="jquery.plugin.pullToRefresh.js"></script>
 
 <title>Read</title>
 
 </head>
 <body>
-
+<div class="scrollable">
+    <div class="wrap">
+        <!-- Your content here -->
 
 <div id="container">
 	<div>
@@ -88,8 +92,22 @@ Duis rutrum lectus ex, id eleifend mauris porttitor eu. Vestibulum nisi augue, f
 </div>
 -->
 
+    </div>
+</div>
 
+<script>
+$('.scrollable').pullToRefresh({
+    callback: function() {
+        var def = $.Deferred();
+        
+        setTimeout(function() {
+            def.resolve();      
+        }, 3000); 
 
+        return def.promise();
+    }
+});
+</script>
 
 </body>
 
