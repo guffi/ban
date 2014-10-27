@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	width: auto;
-	background: #111;
+	background: #000;
 	color: #BDBDBD;
 }
 /* ol, ul {
@@ -66,20 +66,30 @@ color: #6DBCDB;
 font-size: 3em;
 font-weight: 900;
 font-style: italic;
+padding: 20px;
 }
 
 #container p
 {
 	font-size: 1em;
-	margin: 10px, 0px;
 	font-weight: 300;
 	text-align: center;
+	padding: 1em;
 }
 
-/* #container a, button, img, ul, ol, li, button
+#container a
+{
+	font-size: 1em;
+	font-weight: 300;
+	text-align: center;
+	padding: 1em;
+}
+
+#container button, img, ul, ol, li, button
 {
 	float: center;
-} */
+	padding: 5px;
+}
 
 /* #container img  
 {
