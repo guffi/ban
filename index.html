@@ -22,6 +22,20 @@
 <script src="read.js"></script>
 <script src="jquery.plugin.pullToRefresh.js"></script>
 
+<script>
+$('.scrollable').pullToRefresh({
+    callback: function() {
+        var def = $.Deferred();
+        
+        setTimeout(function() {
+            def.resolve();      
+        }, 3000); 
+
+        return def.promise();
+    }
+});
+</script>
+
 <title>Read</title>
 
 </head>
@@ -95,19 +109,6 @@ Duis rutrum lectus ex, id eleifend mauris porttitor eu. Vestibulum nisi augue, f
     </div>
 </div>
 
-<script>
-$('.scrollable').pullToRefresh({
-    callback: function() {
-        var def = $.Deferred();
-        
-        setTimeout(function() {
-            def.resolve();      
-        }, 3000); 
-
-        return def.promise();
-    }
-});
-</script>
 
 </body>
 
