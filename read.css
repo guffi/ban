@@ -76,6 +76,13 @@ table {
 	padding: 2px;
 }
 
+#container h3
+{
+	font-size: 1.25em;
+	font-weight: 400;
+	padding: 2px;
+}
+
 #container p
 {
 	font-size: 1em;
